@@ -5,15 +5,15 @@
     <!-- Required meta tags always come first -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
- 
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" /> 
-    
-     <!-- Additional CSS must be placed after Bootstrap CSS -->
-     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -22,7 +22,10 @@
 
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row">
+                <div class="col-4 col-sm-3 align-self-center">
+                    <img src="img/logo.png" class="img-fluid"/>
+                </div>
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2> 
@@ -33,7 +36,8 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nuucampNavBar">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30"/> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavBar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
@@ -55,9 +59,13 @@
             </div>
 
             <div class="col">
-                <h3>Our Campsites</h3>
-                <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
-            </div>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail"/>
+                    <div class="media-body align-self-center">
+                        <h3>Our Campsites</h3>
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                    </div>
+                </div>
         </div>
     
         <div class="row row-content align-items-center">
@@ -77,17 +85,21 @@
             </div>
         
             <div class="col">
-                <h3>Bootstrap Outfitters</h3>
-                <p class="d-none d-sm-block">Bootstrap Outfitters supplies you gear you need at prices you can't beat.</p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters"/>
+                    <div class="media-body align-self-center"></div>
+                        <h3>Bootstrap Outfitters</h3>
+                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you gear you need at prices you can't beat.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-   
 
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-               <div class="col-4 col-sm-2 offset-1">
+                <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                         <ul class = "list-unstyled">
                             <li><a href="#">Home</a></li>
