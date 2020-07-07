@@ -273,22 +273,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--Week3 Tooltips (removed per Week 3 workshop)--> 
-    <!--Week 4 jQuery for pause/play click carousel-->  
-    <script>
-        $(function(){
-            $(".carousel").carousel({interval: 2000});
-            $("#carouselButton").click(function(){
-                if($("#carouselButton").children("i").hasClass("fa-pause")){
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton").children("i").removeClass("fa-pause");
-                    $("#carouselButton").children("i").addClass("fa-play");
-                } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause");
-                }
-            });
-        });
-    </script> 
+    <!--Week 4 jQuery for pause/play click carousel / move the jQuery script into external script file-->  
+    <script src="js/scripts.js"></script> 
 </body>
 </html>
